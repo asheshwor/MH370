@@ -1,5 +1,5 @@
 #reading MH370 data
-mh370.raw <- read.delim("U:/github/MH370/MH370.txt", stringsAsFactors=FALSE)
+mh370.raw <- read.delim("./data/MH370.txt", stringsAsFactors=FALSE)
 head(mh370.raw)
 names(mh370.raw)
 str(mh370.raw)
