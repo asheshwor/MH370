@@ -10,6 +10,7 @@ mh370.raw$channel_unit_id <- as.factor(mh370.raw$channel_unit_id)
 mh370.raw$channel_type <- as.factor(mh370.raw$channel_type)
 str(mh370.raw)
 ##plot
+with(mh370.raw, smoothScatter(posixct, BTO/1000000))
 require(ggplot2)
 p.my <- ggplot() + geom_point(data=mh370.raw,
                                aes(posixct, BTO/1000000, col=BFO, shape=channel_type),
